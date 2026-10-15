@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kairos ご提案｜株式会社Good Luck様 LP・バナー制作パートナーシップ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;800&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-deep:#10142A;
+    --navy:#1B2240;
+    --navy-soft:#2B3360;
+    --gold:#E8A33D;
+    --gold-light:#F4C97A;
+    --paper:#F7F3E9;
+    --green:#2E6B5E;
+    --text-dark:#26242A;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Noto Sans JP', sans-serif;
+    color:var(--text-dark);
+    background:var(--paper);
+    line-height:1.9;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Shippori Mincho', serif;
+    letter-spacing:0.04em;
+  }
+  .en{
+    font-family:'Cormorant Garamond', serif;
+    letter-spacing:0.18em;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 78% 22%, rgba(232,163,61,0.35), transparent 42%),
+      radial-gradient(circle at 15% 85%, rgba(46,107,94,0.3), transparent 45%),
+      linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 55%, var(--navy-soft) 100%);
+    color:var(--paper);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    top:-20%;
+    right:-10%;
+    width:620px;
+    height:620px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(244,201,122,0.5) 0%, rgba(244,201,122,0.08) 45%, transparent 70%);
+    filter:blur(2px);
+    pointer-events:none;
+  }
+  .spark{
+    position:absolute;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--gold-light);
+    opacity:0.7;
+    animation:floaty 7s ease-in-out infinite;
+  }
+  @keyframes floaty{
+    0%,100%{ transform:translateY(0) scale(1); opacity:0.6;}
+    50%{ transform:translateY(-26px) scale(1.4); opacity:1;}
+  }
+  .hero-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:36px 32px 0;
+    position:relative;
+    z-index:2;
+  }
+  .brand{
+    font-size:1.1rem;
+    font-weight:700;
+    letter-spacing:0.3em;
+  }
+  .brand span{color:var(--gold-light);}
+  .to-client{
+    font-size:0.78rem;
+    color:var(--gold-light);
+    border:1px solid rgba(244,201,122,0.5);
+    padding:6px 14px;
+    border-radius:999px;
+    letter-spacing:0.1em;
+  }
+  .hero-main{
+    position:relative;
+    z-index:2;
+    padding:0 32px;
+    margin-top:auto;
+    margin-bottom:auto;
+  }
+  .hero-label{
+    font-size:0.85rem;
+    color:var(--gold-light);
+    margin-bottom:22px;
+    display:inline-block;
+    position:relative;
+    padding-left:38px;
+  }
+  .hero-label::before{
+    content:"";
+    position:absolute;
+    left:0; top:50%;
+    transform:translateY(-50%);
+    width:28px; height:1px;
+    background:var(--gold-light);
+  }
+  .hero-main h1{
+    font-size:clamp(2.1rem, 5vw, 3.4rem);
+    font-weight:800;
+    line-height:1.55;
+    max-width:820px;
+  }
+  .hero-main h1 em{
+    font-style:normal;
+    color:var(--gold-light);
+  }
+  .hero-sub{
+    margin-top:28px;
+    font-size:1rem;
+    max-width:560px;
+    color:#D8D3C4;
+    font-weight:300;
+  }
+  .hero-bottom{
+    position:relative;
+    z-index:2;
+    padding:28px 32px 42px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:16px;
+    border-top:1px solid rgba(247,243,233,0.15);
+  }
+  .hero-bottom .tag{
+    font-size:0.78rem;
+    color:#B9B4A3;
+    letter-spacing:0.08em;
+  }
+  .scroll-note{
+    font-size:0.75rem;
+    color:var(--gold-light);
+    letter-spacing:0.2em;
+  }
+
+  /* ===== SECTION COMMON ===== */
+  section{
+    padding:96px 0;
+    position:relative;
+  }
+  .section-head{
+    margin-bottom:56px;
+    text-align:center;
+  }
+  .section-head .kicker{
+    font-size:0.8rem;
+    color:var(--green);
+    letter-spacing:0.25em;
+    display:block;
+    margin-bottom:14px;
+  }
+  .section-head h2{
+    font-size:clamp(1.5rem, 3.4vw, 2.2rem);
+    color:var(--navy);
+    line-height:1.7;
+  }
+  .section-head h2 .accent{
+    color:var(--gold);
+  }
+
+  /* ===== UNDERSTANDING ===== */
+  .understand{
+    background:
+      linear-gradient(180deg, transparent, rgba(27,34,64,0.02)),
+      var(--paper);
+  }
+  .understand-body{
+    max-width:760px;
+    margin:0 auto;
+    position:relative;
+    padding:44px 40px;
+    background:#FFFFFF;
+    border-left:4px solid var(--gold);
+    box-shadow:0 18px 40px -24px rgba(27,34,64,0.35);
+  }
+  .understand-body::before{
+    content:"”";
+    position:absolute;
+    top:-18px;
+    left:30px;
+    font-family:'Shippori Mincho', serif;
+    font-size:4.2rem;
+    color:var(--gold-light);
+    line-height:1;
+  }
+  .understand-body p{
+    font-size:0.98rem;
+    color:#3A3730;
+    margin-bottom:18px;
+  }
+  .understand-body p:last-child{margin-bottom:0;}
+  .understand-body strong{
+    color:var(--navy);
+    font-weight:700;
+  }
+
+  /* ===== VALUE CARDS ===== */
+  .value{
+    background:linear-gradient(170deg, var(--navy-deep), var(--navy) 70%);
+    color:var(--paper);
+  }
+  .value .section-head h2{color:var(--paper);}
+  .value .section-head .kicker{color:var(--gold-light);}
+  .cards{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:24px;
+  }
+  .card{
+    background:rgba(247,243,233,0.04);
+    border:1px solid rgba(232,163,61,0.3);
+    border-radius:4px;
+    padding:34px 28px;
+    position:relative;
+    transition:transform .3s ease, background .3s ease;
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    background:rgba(232,163,61,0.08);
+  }
+  .card .num{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.4rem;
+    color:var(--gold-light);
+    display:block;
+    margin-bottom:10px;
+  }
+  .card h3{
+    font-size:1.08rem;
+    margin-bottom:12px;
+    color:var(--paper);
+  }
+  .card p{
+    font-size:0.88rem;
+    color:#C9C4B4;
+    font-weight:300;
+  }
+  .card.wide{grid-column:span 1;}
+  @media(max-width:900px){
+    .cards{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:600px){
+    .cards{grid-template-columns:1fr;}
+  }
+
+  /* ===== PROCESS ===== */
+  .process{background:var(--paper);}
+  .timeline{
+    max-width:820px;
+    margin:0 auto;
+    position:relative;
+    padding-left:34px;
+  }
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:10px; top:6px; bottom:6px;
+    width:2px;
+    background:linear-gradient(180deg, var(--gold), var(--green));
+  }
+  .step{
+    position:relative;
+    padding-bottom:46px;
+  }
+  .step:last-child{padding-bottom:0;}
+  .step::before{
+    content:"";
+    position:absolute;
+    left:-34px;
+    top:2px;
+    width:22px; height:22px;
+    border-radius:50%;
+    background:var(--paper);
+    border:3px solid var(--gold);
+  }
+  .step .day{
+    font-family:'Cormorant Garamond', serif;
+    color:var(--green);
+    font-size:0.95rem;
+    letter-spacing:0.12em;
+    margin-bottom:6px;
+    display:block;
+  }
+  .step h3{
+    font-size:1.1rem;
+    color:var(--navy);
+    margin-bottom:8px;
+  }
+  .step p{
+    font-size:0.9rem;
+    color:#4B4840;
+    max-width:600px;
+    font-weight:300;
+  }
+  .speed-note{
+    max-width:820px;
+    margin:50px auto 0;
+    background:var(--navy);
+    color:var(--paper);
+    padding:26px 30px;
+    border-radius:4px;
+    font-size:0.88rem;
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+  }
+  .speed-note .mark{
+    color:var(--gold-light);
+    font-size:1.4rem;
+    font-family:'Shippori Mincho',serif;
+  }
+
+  /* ===== CLOSING ===== */
+  .closing{
+    background:
+      radial-gradient(circle at 20% 20%, rgba(232,163,61,0.25), transparent 50%),
+      linear-gradient(200deg, var(--navy-deep), var(--navy));
+    color:var(--paper);
+    text-align:center;
+  }
+  .closing .section-head h2{color:var(--paper);}
+  .closing .section-head .kicker{color:var(--gold-light);}
+  .answer-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    max-width:760px;
+    margin:0 auto 52px;
+    text-align:left;
+  }
+  .answer-item{
+    background:rgba(247,243,233,0.05);
+    border:1px solid rgba(232,163,61,0.25);
+    padding:22px 24px;
+    border-radius:4px;
+  }
+  .answer-item .q{
+    font-size:0.75rem;
+    color:var(--gold-light);
+    letter-spacing:0.1em;
+    margin-bottom:8px;
+    display:block;
+  }
+  .answer-item .a{
+    font-size:0.92rem;
+    color:#EDE9DA;
+    font-weight:300;
+  }
+  @media(max-width:700px){
+    .answer-grid{grid-template-columns:1fr;}
+  }
+  .cta-box{
+    display:inline-flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+  }
+  .cta-btn{
+    background:linear-gradient(120deg, var(--gold), var(--gold-light));
+    color:var(--navy-deep);
+    font-weight:700;
+    padding:18px 48px;
+    border-radius:999px;
+    font-size:1.02rem;
+    letter-spacing:0.05em;
+    box-shadow:0 18px 36px -16px rgba(232,163,61,0.6);
+    transition:transform .25s ease;
+    display:inline-block;
+  }
+  .cta-btn:hover{transform:translateY(-3px);}
+  .cta-sub{
+    font-size:0.82rem;
+    color:#BDB8A7;
+  }
+  footer{
+    background:var(--navy-deep);
+    color:#7C7868;
+    text-align:center;
+    padding:26px 20px;
+    font-size:0.75rem;
+    letter-spacing:0.1em;
+  }
+
+  @media(max-width:768px){
+    .hero-top{padding:28px 20px 0;}
+    .hero-main{padding:0 20px;}
+    .hero-bottom{padding:24px 20px 32px;}
+    section{padding:70px 0;}
+    .wrap{padding:0 20px;}
+    .understand-body{padding:34px 24px;}
+    .timeline{padding-left:28px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="spark" style="top:18%; left:68%;"></div>
+  <div class="spark" style="top:62%; left:80%; animation-delay:2s;"></div>
+  <div class="spark" style="top:40%; left:12%; animation-delay:4s;"></div>
+  <div class="spark" style="top:78%; left:40%; animation-delay:1.4s;"></div>
+
+  <div class="hero-top">
+    <div class="brand">KA<span>I</span>ROS</div>
+    <div class="to-client">PROPOSAL FOR 株式会社Good Luck 様</div>
+  </div>
+
+  <div class="hero-main">
+    <span class="hero-label en">LIGHT ON THE UNSEEN KNOWLEDGE</span>
+    <h1>まだ光の当たっていない知に、<br>かたちを与える仕事を、<br><em>スピードと誠実さ</em>で支えたい。</h1>
+    <p class="hero-sub">
+      講座プロモーション事業という「価値を社会に届ける仕事」に、
+      デザインと実装の両輪で伴走するご提案です。<br>Webデザインチーム Kairos より。
+    </p>
+  </div>
+
+  <div class="hero-bottom">
+    <div class="tag">LP制作 / バナー制作 / コーディング実装 ー 完全在宅・フルフレックス対応</div>
+    <div class="scroll-note en">SCROLL ↓</div>
+  </div>
+</header>
+
+<section class="understand">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker en">OUR UNDERSTANDING</span>
+      <h2>「眠っている価値」を届ける仕事は、<br><span class="accent">速さ</span>と<span class="accent">丁寧さ</span>の両立を求められる。</h2>
+    </div>
+    <div class="understand-body">
+      <p>
+        Good Luck様が手がけていらっしゃるのは、単なるWeb制作ではなく、
+        <strong>「優れた知識やスキルに光を当て、正しくビジネスとして届ける」</strong>という仕事だと理解しています。
+        どんなに価値のあるノウハウも、LPという「最初の出会いの場」で魅力が伝わらなければ、その光は届きません。
+      </p>
+      <p>
+        募集要項を拝見し、<strong>LPは5日、レターは7日</strong>という明確なスピード基準をお持ちであることに、
+        事業としての本気度を感じました。これは「早いだけ」のデザイナーでは務まらず、
+        構成・デザイン・コーディングを一気通貫で判断できる体制があって初めて実現できるスケジュールです。
+      </p>
+      <p>
+        私たちKairosは、<strong>デザインから実装までを分業せず一体で担う</strong>チームとして、
+        このスピード感と、オンライン講座という文脈に必要な「信頼感のある見せ方」の両方に応えられると考え、
+        ご提案させていただきます。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="value">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker en">WHAT KAIROS CAN OFFER</span>
+      <h2>Kairosが提供できる、<br><span class="accent">5つの価値</span></h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="num en">01</span>
+        <h3>デザイン〜コーディングの一貫対応</h3>
+        <p>構成案・デザインカンプ作成からコーディング、サーバーへのアップロードまで、Kairosのチーム内で完結。指示の目減りがなく、意図通りのLPを形にします。</p>
+      </div>
+      <div class="card">
+        <span class="num en">02</span>
+        <h3>LP5日／レター7日に応える制作体制</h3>
+        <p>デザイナーとコーダーが並走する体制のため、クオリティを落とさずにスピード対応が可能。繁忙期の前倒し・調整にも柔軟にお応えします。</p>
+      </div>
+      <div class="card">
+        <span class="num en">03</span>
+        <h3>教育・講座コンテンツへの理解</h3>
+        <p>「信頼」「権威性」「共感」を軸に、受講を迷っている読者の背中を押す構成・デザインを設計。講座プロモーション特有の訴求ポイントを押さえます。</p>
+      </div>
+      <div class="card">
+        <span class="num en">04</span>
+        <h3>完全在宅・フルフレックスに最適化</h3>
+        <p>非同期コミュニケーション前提のディレクション体制を構築済み。時差があっても進行が止まらない、チームとしての制作フローをご用意しています。</p>
+      </div>
+      <div class="card">
+        <span class="num en">05</span>
+        <h3>公開後の修正・運用まで伴走</h3>
+        <p>公開前の微調整やバナー差し替えなど、細かな修正対応も継続的にサポート。単発ではなく、長期的な制作パートナーとして関わらせていただきます。</p>
+      </div>
+      <div class="card">
+        <span class="num en">＋</span>
+        <h3>案件ごとの柔軟なご相談</h3>
+        <p>ボリュームや難易度に応じた料金体系をご提案可能。まずは1案件からのスモールスタートでも歓迎です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker en">HOW WE WORK</span>
+      <h2>進め方の<span class="accent">イメージ</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="step">
+        <span class="day en">DAY 0</span>
+        <h3>ヒアリング・構成設計</h3>
+        <p>講座内容・ターゲット・訴求軸を伺い、構成案（ワイヤー）をスピーディに作成します。</p>
+      </div>
+      <div class="step">
+        <span class="day en">DAY 1-2</span>
+        <h3>デザインカンプ制作</h3>
+        <p>講座の世界観・信頼感を踏まえたビジュアルを設計。トンマナのすり合わせを早期に行います。</p>
+      </div>
+      <div class="step">
+        <span class="day en">DAY 3-4</span>
+        <h3>コーディング・実装</h3>
+        <p>レスポンシブ対応・表示速度を考慮した実装。パーツ画像やバナーの作成もあわせて対応します。</p>
+      </div>
+      <div class="step">
+        <span class="day en">DAY 5</span>
+        <h3>最終確認・公開</h3>
+        <p>サーバーへのアップロード、公開前の微調整まで対応し、LPを完成させます。</p>
+      </div>
+      <div class="step">
+        <span class="day en">AFTER</span>
+        <h3>修正対応・次回制作へ</h3>
+        <p>公開後の改善や、次のLP・レター制作へと継続的にご一緒させてください。</p>
+      </div>
+    </div>
+    <div class="speed-note">
+      <span class="mark">灯</span>
+      <div>
+        LP5日・レター7日という目安スケジュールを前提に、品質を落とさないための
+        「構成とデザインを並行で進める」「コーディング前提でデザインする」体制を組んでいます。
+        2〜3日の前倒しのご相談にも対応可能です。
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker en">NEXT STEP</span>
+      <h2>アンケート項目への、<br>Kairosからの回答です</h2>
+    </div>
+    <div class="answer-grid">
+      <div class="answer-item">
+        <span class="q en">① 自己紹介</span>
+        <div class="a">デザインとコーディングを一体で担う少人数の制作チーム「Kairos」です。LP制作を中心に、要件定義〜実装〜公開まで一気通貫で対応しています。</div>
+      </div>
+      <div class="answer-item">
+        <span class="q en">② 経験・実績</span>
+        <div class="a">Webデザイン・LP制作・コーディングの実務経験3年以上。教育・講座系を含む複数業種のLP制作実績がございます。</div>
+      </div>
+      <div class="answer-item">
+        <span class="q en">③ ポートフォリオ</span>
+        <div class="a">制作実績・ポートフォリオはご連絡いただいた後、改めて共有させていただきます。</div>
+      </div>
+      <div class="answer-item">
+        <span class="q en">④ 制作価格 / ⑤ 納品日数</span>
+        <div class="a">LPは5日前後を目安に、ボリューム・ご予算に応じて個別にお見積りいたします。まずは一度ご相談ください。</div>
+      </div>
+    </div>
+    <div class="cta-box">
+      <a href="#" class="cta-btn">Kairosとまずは一度、話してみる</a>
+      <div class="cta-sub">Web面談（Zoom）も歓迎です。ご返信は原則1週間以内にいたします。</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  KAIROS — Web制作・システム開発チーム ｜ for 株式会社Good Luck 様
+</footer>
+
+</body>
+</html>
